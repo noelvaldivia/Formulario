@@ -7,136 +7,131 @@
     <title>Formularios</title>
 </head>
 <body>
-<header>Formularios</header>
  <main>
-     <section>   
-       <table>
-       <tbody>
-              <tr>
-                <td  ><p>Tratamiento:</p>
-             <input type="radio" name="p1" value="1"> Sr. 
-             <input type="radio" name="p1" value="2"> Sra.</td>
-                 <td> <p>Nombre:</p>
-                     <input type="text" name="nombre" size="20"placeholder="Escriba su Nombre"></p></td>
-                <td><p>Apellido 1: </p>
-                 <input type="text" name="apellidos" size="20"></p></td>
-                <td> <p>Apellido 2:</p> 
-               <input type="text" name="apellidos" size="20"></td>
-              </tr>
-                  <tr>
-                     <td><p>Tipo Doc: </p>
-                        <select name="menu">
-                                <option value="0" size="20">...</option>
-                                <option value="1">DNI</option>
-                                <option value="2">NIF</option>
-                                <option value="3">NIE</option>
-                              </select></td>
-<td><p>Nº Doc: <input type="text" name="nombre" size="20"></p></td>
-<td> <p>Fecha Nacimiento  <input type="date" name="fecha"></p></td>   </tr>
+    <section> 
+        <form action="práctica.php" method="GET" >   
+        <table>
+        <tbody>
+        <tr><td><p>Tratamiento: *</p>
+               <input type="radio" name="p1" value="1"> Sr. 
+               <input type="radio" name="p1" value="2"> Sra.</td>
+             <td><p>Nombre: *</p>
+                <input type="text" name="nombre" size="19"></td>
+             <td><p>Apellido 1: *</p>
+                <input type="text" name="apellidos" size="19"></td>
+             <td><p>Apellido 2: *</p> 
+                 <input type="text" name="apellidos" size="19"></td></tr>
+
+        <tr><td><p>Tipo Doc: *</p>
+                <select name="menu">
+                <option value="0">...</option>
+                <option value="1">DNI</option>
+                <option value="2">NIF</option>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td>
+             <td><p>Nº Doc: *</p>
+                <input type="text" name="nombre" size="19"></p></td>
+             <td><p>Fecha Nacimiento: *</p> 
+                <input type="date" name="fecha"></td></tr>
               
-<tr>
-<td><p>Pais Nacimiento</p>
-    <select name="menu" </select>>
-            <option value="0">...</option>
-            <option value="1">ESPAÑA</option>
-            <option value="2">ITALIA</option>
-            <option value="3">INGLATERRA</option>
-          </select></td>
-          <td><p>Nacionalidad</p>
-            <select name="menu" placeholder="ESPAÑA" </select>>
-                    <option value="0">...</option>
-                    <option value="1">ESPAÑOLA</option>
-                    <option value="2">ITALIANA</option>
-                    <option value="3">INGLESA</option>
-                  </select></td>
-<td>
-        <p> Segunda Nacionalidad</p>
-        <select name="menu" </select>
+        <tr><td><p>Pais Nacimiento: *</p>
+                <select name="menu" </select>>
+                <option value="0">...</option>
+                <option value="1">ESPAÑA</option>
+                <option value="2">ITALIA</option>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td>
+             <td><p>Nacionalidad: *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">ESPAÑOLA</option>
+                <option value="2">ITALIANA</option>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p> Segunda Nacionalidad:</p>
+                <select name="menu" </select>
                 <option value="0">...</option>
                 <option value="1">BELGA</option>
                 <option value="2">BRASILEÑA</option>
-                <option value="3">AMERICANA</option>
-              </select></td>
-              <td><p>Paíz residencia fiscal</p>
-                <select name="menu" placeholder="ESPAÑA" </select>>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Paíz residencia fiscal: *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">ESPAÑA</option>
+                <option value="2">ITALIA</option>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td></tr>
+        <tr><td><p>Trabajo *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Tipo de Actividad *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Sector Profesional *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">BancoEspañaINGDirect</option>
+                </select></td>   
+              <td><p>Empresa: *</p>
+                <input type="text" name="nombre" size="20"></td></tr>
+        <tr><td><p>Propósito de la Cuenta: *</p>
+                <select name="menu"</select>
+                <option value="0">...</option>
+                <option value="1">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Origen de sus ahorros: *</p>
+                        <select name="menu"</select>
                         <option value="0">...</option>
-                        <option value="1">ESPAÑOLA</option>
-                        <option value="2">ITALIANA</option>
-                        <option value="3">INGLESA</option>
-                      </select></td></tr>
-                      <tr>
-<td><p>Trabajo</p>
-    <select name="menu" placeholder="ESPAÑA" </select>>
-            <option value="0"></option>
-            <option value="1"></option>
-                      </select></td>
-                      <td><p>Tipo de Actividad</p>
-                        <select name="menu" placeholder="ESPAÑA" </select>>
-                                <option value="0"></option>
-                                <option value="1">ESPAÑOLA</option>
-                               </select></td>
-<td><p>Empresa:</p>
-    <input type="text" name="nombre" size="20"></p></td>  </tr>
-    <tr>
-<td><p>Ppoposito de la Cuenta</p>
-    <select name="menu" placeholder="ESPAÑA" </select>>
-            <option value="0"></option>
-            <option value="1">ESPAÑOLA</option>
-           </select></td>
-           <td><p>Origen de sus ahorros </p>
-            <select name="menu" placeholder="ESPAÑA" </select>>
-                    <option value="0"></option>
-                    <option value="1">ESPAÑOLA</option>
-                   </select></td>    </tr>
+                        <option value="1">BancoEspañaINGDirect</option>
+                        </select></td></tr>
+          </tbody>
+       <table> 
+      <tbody style="background-color: lightgrey;">
+        <tr><td><p>Tipo de vía *</p>
+                <select name="menu"</select>
+                <option value="0">...</option>
+                <option value="1">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Dirección *</p>
+               <input type="text" name="direccion" size="30"></td>
+              <td> <p>Número *</p>
+                    <input type="text" name="numero" size="5"></td>
+              <td><p>Piso</p>
+                    <input type="text" name="piso" size="5"></td></tr>
+        <tr><td> <p>Urb./Pol./Otros</p>
+                <input type="text" name="direccion" size="19"> </td>
+             <td><p>Localidad *</p>
+                <input type="text" name="direccion" size="19"> </td>
+             <td><p>Provincia *</p>
+                <select name="menu"</select>>
+                <option value="0">...</option>
+                <option value="1">Castellon</option>
+                <option value="2">Valencia</option>
+                <option value="3">BancoEspañaINGDirect</option>
+                </select></td>
+              <td><p>Código Postal *</p>
+                <input type="text" name="direccion" size="19"></td></tr>
 
-            </tbody>
-            <tbody style="background-color: lightgrey;" style="border:lightgrey;" >
-<tr>
-<td><p>Tipo de vía</p>
-    <select name="menu" placeholder="ESPAÑA" </select>>
-            <option value="0"></option>
-            <option value="1">ESPAÑOLA</option>
-           </select></td>
-           <td> Direccion
-               <input type="text" name="direccion" size="20"> </td>
-               <td> Número
-                    <input type="text" name="numero" size="20"> </td>
-                    <td> Piso
-                            <input type="text" name="piso" size="20"> </td> </tr>
-                            <tr>
-<td> Urb./Pol./Otros
-        <input type="text" name="direccion" size="20"> </td>
-        <td> Localidad
-                <input type="text" name="direccion" size="20"> </td>
- 
-<td><p>Provincia</p>
-    <select name="menu" placeholder="ESPAÑA" </select>>
-            <option value="0">...</option>
-            <option value="1">Castellon</option>
-            <option value="2">Valencia</option>
-            <option value="3">Alicante</option>
-        </select></td>
-                <td> Codigo Postal
-                        <input type="text" name="direccion" size="20"> </td></tr>
-
-     <tr>
-            <td><p>Teléfono Movil</p> 
-
-                    <input type="tel" name="telef" size="20"> </td>
-     <td> Telefono particular
-                            <input type="tel" name="telef" size="20"> </td>
-     <td> Direccion de email
-             <input type="email" name="correo" size="20"> </td>                      
-
-
-     </tr>                   
-
-            </tbody>
-          </table>
- 
-        
+        <tr><td><p>Teléfono Móvil: *</p> 
+                <input type="tel" name="telef" size="19"></td>
+            <td> Teléfono particular:
+                <input type="tel" name="telef" size="19"> </td>
+            <td> Dirección de email: *
+                 <input type="email" name="correo" size="19"></td></tr>                   
+     </tbody>
+    </table>
 </form>
 </section>
+<section>
+
+        
+</section>
+
     </main>
  </body>
 </html>
