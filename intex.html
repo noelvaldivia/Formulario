@@ -13,8 +13,8 @@
         <table>
         <tbody>
         <tr><td><p>Tratamiento: *</p>
-               <input type="radio" name="p1" value="1"> Sr. 
-               <input type="radio" name="p1" value="2"> Sra.</td>
+               <input type="radio" name="p1" value="1" required> Sr. 
+               <input type="radio" name="p1" value="2" required> Sra.</td>
              <td><p>Nombre: *</p>
                 <input type="text" name="nombre" size="19"></td>
              <td><p>Apellido 1: *</p>
@@ -90,8 +90,8 @@
                         <option value="1">BancoEspañaINGDirect</option>
                         </select></td></tr>
           </tbody>
-       <table> 
-      <tbody style="background-color: lightgrey;">
+       <table style="background-color: lightgray;" > 
+      <tbody>
         <tr><td><p>Tipo de vía *</p>
                 <select name="menu"</select>
                 <option value="0">...</option>
@@ -126,12 +126,21 @@
      </tbody>
     </table>
 </form>
-</section>
+</section> <hr>
 <section>
-
-        
+<p>  Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad: </p>
+<input type="checkbox" name="casilla"> Plan de pensiones
+<input type="checkbox" name="casilla"> Fondos
+<input type="checkbox" name="casilla"> Hipoteca
+<input type="checkbox" name="casilla"> Péstamo
+<input type="checkbox" name="casilla"> Seguro de Vida        
+ <hr>
+<p> <small> Puede consultar en nuestra Web o solicitarnos toda la Informacion <br>
+   Precontractual de nuestros productos. Al puñsar "Continuar"está <br> 
+   aceptando la Cláusula de protección de datos.</small> </p>
+   <p> <small>(*)Los campos marcados con asterisco son obligatorios.</small> </p>   
+   <button type="button"><img src="img/Anotación 2019-12-11 140744.png" alt="img" width="140" height="40"></button>
 </section>
-
-    </main>
+</main>
  </body>
 </html>
